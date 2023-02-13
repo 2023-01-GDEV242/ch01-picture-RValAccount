@@ -40,7 +40,8 @@ public class Picture
             wall.changeSize(120);
             wall.makeVisible();
             
-            window.changeColor("black");
+            this.setColor2();
+            
             window.moveHorizontal(-120);
             window.moveVertical(40);
             window.changeSize(40);
@@ -51,7 +52,6 @@ public class Picture
             roof.moveVertical(-60);
             roof.makeVisible();
     
-            sun.changeColor("yellow");
             sun.moveHorizontal(100);
             sun.moveVertical(-40);
             sun.changeSize(80);
@@ -80,5 +80,11 @@ public class Picture
         window.changeColor("black");
         roof.changeColor("green");
         sun.changeColor("yellow");
+    }
+    
+    public void setColor2()
+    {
+        window.changeColor("black");
+        roof.changeColor("green");
     }
 }
